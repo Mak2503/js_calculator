@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculator</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <input type="text" id="useinp" placeholder="0" disabled />
+      <input type="text" id="compout" placeholder="0" disabled />
+      <table>
+        <tr>
+          <td onclick="calcValue('(')">(</td>
+          <td onclick="calcValue(')')">)</td>
+          <td onclick="removeInp()">&lt;-</td>
+          <td onclick="calcValue('+')" class="vari">+</td>
+        </tr>
+        <tr>
+          <td onclick="calcValue('7')">7</td>
+          <td onclick="calcValue('8')">8</td>
+          <td onclick="calcValue('9')">9</td>
+          <td onclick="calcValue('-')" class="vari">-</td>
+        </tr>
+        <tr>
+          <td onclick="calcValue('4')">4</td>
+          <td onclick="calcValue('5')">5</td>
+          <td onclick="calcValue('6')">6</td>
+          <td onclick="calcValue('*')" class="vari">*</td>
+        </tr>
+        <tr>
+          <td onclick="calcValue('1')">1</td>
+          <td onclick="calcValue('2')">2</td>
+          <td onclick="calcValue('3')">3</td>
+          <td onclick="calcValue('/')" class="vari">/</td>
+        </tr>
+        <tr>
+          <td onclick="reset()">C</td>
+          <td onclick="calcValue('0')">0</td>
+          <td onclick="calcValue('.')">.</td>
+          <td onclick="evalInp()" class="equalbtn">=</td>
+        </tr>
+      </table>
+    </div>
+    <script src="./index.js" type="text/javascript"/>
+  </body>
+</html>
